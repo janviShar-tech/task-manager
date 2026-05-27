@@ -105,7 +105,7 @@ function createTask(){
 
   const text = taskInput.value.trim();
 
-  if(text === "") return;
+  if(text === "Destroy Project") return;
 
   const task =
   document.createElement("div");
