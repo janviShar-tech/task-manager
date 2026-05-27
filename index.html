@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyberpunk Task Manager</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+
+    <h1>CYBER TASK</h1>
+
+    <div class="controls">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search task..."
+      >
+
+      <button id="darkModeBtn">
+        🌙
+      </button>
+
+    </div>
+
+  </header>
+
+  <section class="task-form">
+
+    <input
+      type="text"
+      id="taskInput"
+      placeholder="Enter mission..."
+    >
+
+    <select id="prioritySelect">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <button id="addTaskBtn">
+      Add Mission
+    </button>
+
+  </section>
+
+  <main class="board">
+
+    <div class="column" id="todo">
+
+      <h2>TODO</h2>
+
+      <div class="task-list"></div>
+
+    </div>
+
+    <div class="column" id="progress">
+
+      <h2>IN PROGRESS</h2>
+
+      <div class="task-list"></div>
+
+    </div>
+
+    <div class="column" id="done">
+
+      <h2>DONE</h2>
+
+      <div class="task-list"></div>
+
+    </div>
+
+  </main>
+
+  <script src="features/taskManager.js"></script>
+  <script src="features/darkMode.js"></script>
+  <script src="features/search.js"></script>
+  <script src="features/storage.js"></script>
+
+</body>
+</html>
